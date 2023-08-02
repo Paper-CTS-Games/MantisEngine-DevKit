@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MantisEngine.Core</name>
+    </assembly>
+    <members>
+        <member name="M:MantisEngine.Core.Plugin.EngineSettings.SetClearColor(System.Drawing.Color)">
+            <summary>
+            Sets the background color of the editor.
+            </summary>
+            <param name="color">Background color in <see cref="T:System.Drawing.Color"/> format.</param>
+            <remarks>
+            This method sets the background color of the editor to the specified color.
+            </remarks>
+        </member>
+        <member name="M:MantisEngine.Core.Plugin.EngineSettings.SetClearColor(System.String)">
+            <summary>
+            Sets the background color of the editor.
+            </summary>
+            <param name="color">Background color in hex format.</param>
+            <remarks>
+            This method sets the background color of the editor to the specified color.
+            </remarks>
+        </member>
+        <member name="M:MantisEngine.Core.Plugin.EngineSettings.GetClearColor">
+            <summary>
+            Gets the current background color of the editor.
+            </summary>
+            <returns>Background color in <see cref="T:System.Drawing.Color"/> format.</returns>
+            <remarks>
+            This method returns the current background color of the editor.
+            </remarks>
+        </member>
+    </members>
+</doc>
