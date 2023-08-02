@@ -4,7 +4,7 @@
         <name>MantisEngine.Core</name>
     </assembly>
     <members>
-        <member name="M:MantisEngine.Core.Plugin.EngineSettings.SetClearColor(System.Drawing.Color)">
+        <member name="M:MantisEngine.Core.Plugin.EngineSettings.SetBackgroundColor(System.Drawing.Color)">
             <summary>
             Sets the background color of the editor.
             </summary>
@@ -13,7 +13,7 @@
             This method sets the background color of the editor to the specified color.
             </remarks>
         </member>
-        <member name="M:MantisEngine.Core.Plugin.EngineSettings.SetClearColor(System.String)">
+        <member name="M:MantisEngine.Core.Plugin.EngineSettings.SetBackgroundColor(System.String)">
             <summary>
             Sets the background color of the editor.
             </summary>
@@ -22,7 +22,7 @@
             This method sets the background color of the editor to the specified color.
             </remarks>
         </member>
-        <member name="M:MantisEngine.Core.Plugin.EngineSettings.GetClearColor">
+        <member name="M:MantisEngine.Core.Plugin.EngineSettings.GetBackgroundColor">
             <summary>
             Gets the current background color of the editor.
             </summary>
