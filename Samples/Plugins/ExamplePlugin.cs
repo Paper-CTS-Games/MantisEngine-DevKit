@@ -1,17 +1,16 @@
 using MantisEngine.Core;
 using MantisEngine.Core.Plugin;
 
-
-namespace ExamplePlugin
+namespace TestPlugin
 {
-    public class ExamplePlugin : IPlugin
+    public class ExamplePlugin : PluginBase
     {
         public PluginData Info { get 
             { 
                 return new PluginData
                 {
-                    Name = "ExamplePlugin",
-                    Description = "Plugin description",
+                    Name = "TestPlugin",
+                    Description = "Test plugin description",
                     Version = "1.0.0"
                 };
             } 
