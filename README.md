@@ -1,4 +1,39 @@
-Release notes 1.0.1:
+### Examples:
+
+### Release notes 1.0.1:
+```csharp
+using MantisEngine.Core;
+using MantisEngine.Core.Plugin;
+
+namespace ExamplePlugin
+{
+    public class ExamplePlugin : PluginBase
+    {
+        public PluginData Info { get 
+            { 
+                return new PluginData
+                {
+                    Name = "ExamplePlugin",
+                    Description = "Test plugin description",
+                    Version = "1.0.0"
+                };
+            } 
+        }
+
+        public void OnLoad()
+        {
+            Console.WriteLine("Hello World!");
+            EngineSettings.SetBackgroundColor("#000000");
+        }
+
+        public void OnUnload()
+        {
+            Console.WriteLine("Bye!");
+        }
+    }
+}
+```
+
 
 This release introduces a number of new features that make it easier to create plugins, including support for registering programming languages and engine events.
 
