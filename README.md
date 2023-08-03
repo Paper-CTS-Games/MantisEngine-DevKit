@@ -1,5 +1,5 @@
 **Attention! This library is only used to create plugins for the Mantis Engine and no more!**
-
+[![API on NuGet](https://img.shields.io/nuget/v/MantisEngine.Core.svg?label=MantisEngine.Core&color=blue&logo=nuget&logoColor=white&link=https://www.nuget.org/packages/MantisEngine.Core/)](https://www.nuget.org/packages/MantisEngine.Core/)
 
 ### Examples:
 
