@@ -63,6 +63,19 @@ public void OnLoad()
 }
 ```
 
+Release notes 1.0.2.1 (dev version):
+
+This release introduces a number of new features that make it easier to create plugins, including support for registering custom shaders.
+
+Plugins can now register custom shader.
+
+Other improvements in this release include:
+- Expanded documentation and examples for plugin development
+- Bug fixes and stability improvements
+
+Overall, this release should make it easier for developers to extend the functionality of the system and create more powerful plugins.
+
+
 ### Release notes 1.0.1:
 
 This release introduces a number of new features that make it easier to create plugins, including support for registering programming languages and engine events.
