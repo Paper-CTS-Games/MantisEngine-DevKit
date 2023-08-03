@@ -1,4 +1,4 @@
-**Attention! This library is only used to create plugins on the Mantis Engine and no more!**
+**Attention! This library is only used to create plugins for the Mantis Engine and no more!**
 
 
 ### Examples:
