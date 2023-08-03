@@ -1,6 +1,5 @@
 ### Examples:
 
-### Release notes 1.0.1:
 ```csharp
 using MantisEngine.Core;
 using MantisEngine.Core.Plugin;
@@ -34,6 +33,7 @@ namespace ExamplePlugin
 }
 ```
 
+### Release notes 1.0.1:
 
 This release introduces a number of new features that make it easier to create plugins, including support for registering programming languages and engine events.
 
