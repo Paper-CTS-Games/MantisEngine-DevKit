@@ -1,5 +1,7 @@
 ### Examples:
 
+
+**Register new plugin**
 ```csharp
 using MantisEngine.Core;
 using MantisEngine.Core.Plugin;
@@ -44,6 +46,8 @@ Other improvements in this release include:
 - Improved performance when loading and unloading plugins
 - Better error handling and logging for plugins
 - Expanded documentation and examples for plugin development
+- Changed: ```void SetClearColor(...) -> void SetBackgroundColor(...)```, ```Color GetClearColor() -> Color GetBackgroundColor()```
+- Added: ```void RegisterProgrammingLanguage(ProgrammingLanguage language) ```
 - Bug fixes and stability improvements
 
 Overall, this release should make it easier for developers to extend the functionality of the system and create more powerful plugins.
