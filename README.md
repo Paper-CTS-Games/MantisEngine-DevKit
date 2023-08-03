@@ -63,7 +63,7 @@ public void OnLoad()
 }
 ```
 
-Release notes 1.0.2.1 (dev version):
+### Release notes 1.0.2.1 (dev version):
 
 This release introduces a number of new features that make it easier to create plugins, including support for registering custom shaders.
 
