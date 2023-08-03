@@ -1,37 +1,64 @@
+**Attention! This library is only used to create plugins on the Mantis Engine and no more!**
+
+
 ### Examples:
 
 
 **Register new plugin**
 ```csharp
-using MantisEngine.Core;
-using MantisEngine.Core.Plugin;
-
-namespace ExamplePlugin
+public class ExamplePlugin : PluginBase
 {
-    public class ExamplePlugin : PluginBase
+
+public PluginData Info
+{
+get 
+    { 
+        return new PluginData
+        {
+            Name = "ExamplePlugin",
+            Description = "Test plugin description",
+            Version = "1.0.0"
+        };
+    } 
+}
+
+public void OnLoad()
+{
+    Console.WriteLine("Hello World!");
+    EngineSettings.SetBackgroundColor("#000000");
+}
+
+public void OnUnload()
+{
+    Console.WriteLine("Bye!");
+}
+
+}
+```
+
+**Adding new programming language**
+```csharp
+    //Creating wrapper class
+    internal class ExampleLanguage : ProgrammingLanguage
     {
-        public PluginData Info { get 
-            { 
-                return new PluginData
-                {
-                    Name = "ExamplePlugin",
-                    Description = "Test plugin description",
-                    Version = "1.0.0"
-                };
-            } 
-        }
-
-        public void OnLoad()
+        public ProgrammingLanguage.Info LanguageInfo => new ProgrammingLanguage.Info
         {
-            Console.WriteLine("Hello World!");
-            EngineSettings.SetBackgroundColor("#000000");
-        }
+            FileFormats = new string[] { ".py" },
+            LanguageName = "Python"
+        };
 
-        public void OnUnload()
+        public void RunScript(string path)
         {
-            Console.WriteLine("Bye!");
+            ...
         }
     }
+```
+
+
+```csharp
+public void OnLoad()
+{
+    EngineSettings.RegisterProgrammingLanguage(new ExampleProgrammingLanguage())
 }
 ```
 
